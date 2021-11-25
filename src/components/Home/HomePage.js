@@ -1,16 +1,17 @@
 import React, { Component } from "react";
 import { Icon } from "semantic-ui-react";
-import Photo from "../../img/me-clip.png";
+//import Photo from "../../img/me-clip.png";
 import ICPM from "./ICPM";
-import Destinder from "./Destinder";
-import Canvas from "./Canvas";
+//import Destinder from "./Destinder";
+//import Canvas from "./Canvas";
 import Layout from "../Layout";
 import ReactDOM from "react-dom";
-import Gilagoat from "./Gilagoat";
+//import Gilagoat from "./Gilagoat";
 import Sellout from "./Sellout";
 import Europe from "./Europe";
 import HumanizeTime from "./HumanizeTime";
 import DestinyPlayers from "./DestinyPlayers";
+import Headshot from './Headshot';
 
 const TopContent = () => {
   return (
@@ -18,43 +19,34 @@ const TopContent = () => {
       <div className="top-content">
         <div className="top-title">Hello!</div>
         <div className="top-desc">
-          I'm a Software Engineer focused on web development. I have a
+          I'm a Software Engineer with a passion for payments tech and making people's live's better and easier. I have a
           Bachelor's degree in Information Systems with a Minor in Computer
           Science from the University of Utah.
         </div>
         <div className="top-desc">
-          Currently Senior Software Engineer at{" "}
+          Currently Lead Software Engineer at{" "}
+          <a
+            href="https://emotive.io"
+            className="inline-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Emotive
+          </a>
+          . Previously Senior Software Engineer at{" "}
           <a
             href="https://podium.com"
             className="inline-link"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Podium
-          </a>
-          . Previously at{" "}
-          <a
-            href="https://lds.org"
-            className="inline-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            The Church of Jesus Christ of Latter-Day Saints
-          </a>{" "}
-          and
-          <a
-            href="https://instructure.com"
-            className="inline-link"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {" "}
-            Instructure.{" "}
+            Podium.
           </a>
         </div>
       </div>
       <div className="top-image">
-        <img src={Photo} alt="" className="self-image" />
+				<Headshot />
+{/*        <img src={Photo} alt="" className="self-image" />*/}
       </div>
     </div>
   );
@@ -110,6 +102,23 @@ class HomePage extends Component {
             <div className="experience-body">
               <a
                 className="exp-row"
+                href="https://emotive.io"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="exp-title">
+                  <div className="exp-position">Lead Software Engineer</div>
+                  <div className="exp-place">Emotive</div>
+                </div>
+                {/* <div className="exp-tech">
+                                    React | Rails | Elixir
+                                    </div> */}
+                <div className="exp-date">5/2021 - CURRENT</div>
+              </a>
+
+
+              <a
+                className="exp-row"
                 href="https://podium.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -121,7 +130,7 @@ class HomePage extends Component {
                 {/* <div className="exp-tech">
                                     React | Rails | Elixir
                                     </div> */}
-                <div className="exp-date">10/2020 - CURRENT</div>
+																		<div className="exp-date">10/2020 - 5/2021</div>
               </a>
 
               <a
