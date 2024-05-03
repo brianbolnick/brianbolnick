@@ -11,7 +11,7 @@ import Sellout from "./Sellout";
 import Europe from "./Europe";
 import HumanizeTime from "./HumanizeTime";
 import DestinyPlayers from "./DestinyPlayers";
-import Headshot from './Headshot';
+import Headshot from "./Headshot";
 
 const TopContent = () => {
   return (
@@ -19,21 +19,31 @@ const TopContent = () => {
       <div className="top-content">
         <div className="top-title">Hello!</div>
         <div className="top-desc">
-          I'm a Software Engineer with a passion for payments tech and making people's live's better and easier. I have a
-          Bachelor's degree in Information Systems with a Minor in Computer
-          Science from the University of Utah.
+          I'm a Software Engineer with a passion for payments tech and making
+          people's live's better and easier. I have a Bachelor's degree in
+          Information Systems with a Minor in Computer Science from the
+          University of Utah.
         </div>
         <div className="top-desc">
-          Currently Lead Software Engineer at{" "}
+          Currently Co-founder & VP of Engineering at{" "}
+          <a
+            href="https://jobwise.com"
+            className="inline-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Jobwise
+          </a>
+          . Previously Senior/Lead Software Engineer at{" "}
           <a
             href="https://emotive.io"
             className="inline-link"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Emotive
+            Emotive.
           </a>
-          . Previously Senior Software Engineer at{" "}
+          and
           <a
             href="https://podium.com"
             className="inline-link"
@@ -45,8 +55,8 @@ const TopContent = () => {
         </div>
       </div>
       <div className="top-image">
-				<Headshot />
-{/*        <img src={Photo} alt="" className="self-image" />*/}
+        <Headshot />
+        {/*        <img src={Photo} alt="" className="self-image" />*/}
       </div>
     </div>
   );
@@ -102,6 +112,22 @@ class HomePage extends Component {
             <div className="experience-body">
               <a
                 className="exp-row"
+                href="https://jobwise.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="exp-title">
+                  <div className="exp-position">VP of Engineering</div>
+                  <div className="exp-place">Jobwise</div>
+                </div>
+                {/* <div className="exp-tech">
+                                    React | Rails | Elixir
+                                    </div> */}
+                <div className="exp-date">7/2022 - CURRENT</div>
+              </a>
+
+              <a
+                className="exp-row"
                 href="https://emotive.io"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -113,9 +139,8 @@ class HomePage extends Component {
                 {/* <div className="exp-tech">
                                     React | Rails | Elixir
                                     </div> */}
-                <div className="exp-date">5/2021 - CURRENT</div>
+                <div className="exp-date">5/2021 - 6/2022</div>
               </a>
-
 
               <a
                 className="exp-row"
@@ -130,7 +155,7 @@ class HomePage extends Component {
                 {/* <div className="exp-tech">
                                     React | Rails | Elixir
                                     </div> */}
-																		<div className="exp-date">10/2020 - 5/2021</div>
+                <div className="exp-date">10/2020 - 5/2021</div>
               </a>
 
               <a
