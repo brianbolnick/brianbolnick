@@ -42,8 +42,8 @@ const TopContent = () => {
             rel="noopener noreferrer"
           >
             Emotive.
-          </a>
-          and
+          </a>{" "}
+          and{" "}
           <a
             href="https://podium.com"
             className="inline-link"
